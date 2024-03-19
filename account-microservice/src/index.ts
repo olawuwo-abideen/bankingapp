@@ -1,5 +1,6 @@
-const express = require("express");
-const { PORT } = require("./config");
+import express from 'express';
+import { PORT } from './config';
+import App from './express-app';
 const { databaseConnection } = require("./database");
 const expressApp = require("./express-app");
 const { CreateChannel } = require("./utils");
@@ -30,3 +31,4 @@ const StartServer = async () => {
 };
 
 StartServer();
+
