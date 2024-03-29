@@ -1,6 +1,6 @@
 import express, { Express } from "express";
 import cors from "cors";
-import { customer } from "./api";
+import { notification } from "./api";
 import { CreateChannel } from "./utils";
 
 export default async (app: Express) => {
