@@ -57,11 +57,65 @@ to start using the app.
 
 ## API Endpoints
 
-The following API endpoints are available:
+## User Service
 
-- BaseUrl https://localhost:3000/
+- `POST /register` - User create an account
+- `POST /login` - User login
+- `POST /logout` - User logout
+- `UPDATE /reset-password` - User reset password
+- `GET /profile` - User view profile
+- `UPDATE /updateprofile` - User update profile 
+- `DELETE /deleteprofile` - User Delete profile
 
 
+## Account Service
+
+- `GET /accounts/` - View customer accountS
+- `GET /account/:id` - View account by id
+- `GET /account/:id/transaction` - View account transaction by id
+- `GET /account/:id/balance` - View customer account balance by id
+- `GET /account/transfer` - Get customer transfer
+
+## Transaction Service
+
+- `POST /delivery/signup` - Create a delivery account
+- `POST /delivery/login` - Delivery login
+- `GET /delivery/address` - Get delivery address
+- `GET delivery/profile` - Get delivery profile
+
+
+## Payment Service
+
+- `POST /movie/create` - Create a movie
+- `GET /genre/:type` - Get movie by genre type
+- `GET /:id` - Get movie by id
+- `GET /:id` - Get movie by id
+
+
+## Notification Service
+
+- `POST /notification/sendEmail` - Send email
+- `POST/notification/sendSMS` - Send sms
+
+
+
+
+## Support Service
+
+- `POST /payment/makePurchase` - Make purchase
+- `GET /payment/getPurchaseById/:id` - Get purchase by id
+
+## Investment Service
+
+- `POST /cart` - Add movie to cart
+- `POST /wishlist` - Add movie to wishlist
+- `GET /cart/:id` - Delete movie from cart
+- `GET /cart` - Get movie in cart
+- `GET /wishlist` - Get all wishlist
+- `DELETE /wishlist/:id` - Delete movie in wishlist
+- `POST /order` - Create order
+- `GET /order/:id` - Get order by id
+- `GET /orders` - Get all orders
 
 ## 🤝 Contributing
 
