@@ -70,26 +70,25 @@ to start using the app.
 
 ## Account Service
 
-- `GET /accounts/` - View customer accountS
+- `GET /accounts/` - View user accountS
 - `GET /account/:id` - View account by id
 - `GET /account/:id/transaction` - View account transaction by id
-- `GET /account/:id/balance` - View customer account balance by id
-- `GET /account/transfer` - Get customer transfer
+- `GET /account/:id/balance` - View user account balance by id
+- `GET /account/transfer` - Get user transfer
 
 ## Transaction Service
 
-- `POST /delivery/signup` - Create a delivery account
-- `POST /delivery/login` - Delivery login
-- `GET /delivery/address` - Get delivery address
-- `GET delivery/profile` - Get delivery profile
+- `GET /transaction` - View user transaction
+- `GET /transaction/:id` - View user transaction by id
+- `GET /transaction/:id/cancel` - View user cancel transaction
 
 
 ## Payment Service
 
-- `POST /movie/create` - Create a movie
-- `GET /genre/:type` - Get movie by genre type
-- `GET /:id` - Get movie by id
-- `GET /:id` - Get movie by id
+- `GET /payments/` - View user payment
+- `GET /payment/:id/cancel` - View user cancel payment
+- `GET /payment/:id` - View user payment by id
+
 
 
 ## Notification Service
@@ -98,24 +97,20 @@ to start using the app.
 - `POST/notification/sendSMS` - Send sms
 
 
-
-
 ## Support Service
 
-- `POST /payment/makePurchase` - Make purchase
-- `GET /payment/getPurchaseById/:id` - Get purchase by id
+- `GET /support/ticket` - View user register tickets
+- `GET /support/chat` - View user chat
+- `GET /support/settings` - View settings
+- `GET /support/branches` - View branches
+- `GET /support/contact` - View contact
+
 
 ## Investment Service
 
-- `POST /cart` - Add movie to cart
-- `POST /wishlist` - Add movie to wishlist
-- `GET /cart/:id` - Delete movie from cart
-- `GET /cart` - Get movie in cart
-- `GET /wishlist` - Get all wishlist
-- `DELETE /wishlist/:id` - Delete movie in wishlist
-- `POST /order` - Create order
-- `GET /order/:id` - Get order by id
-- `GET /orders` - Get all orders
+- `POST /portfolio` - View user portfolio
+- `POST /portfolio/transaction` - View user investment
+- `GET /portfolio/assets` - View user assets
 
 ## 🤝 Contributing
 
