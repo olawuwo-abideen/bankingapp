@@ -36,6 +36,25 @@ app.put("/resetpasword", async (req: Request, res: Response, next: NextFunction)
   }
 });
 
+app.get("/profile", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+  } catch (error) {
+    next(error);
+  }
+});
 
+app.get("/updateprofile", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.get("/deleteprofile", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+  } catch (error) {
+    next(error);
+  }
+});
 
   }
