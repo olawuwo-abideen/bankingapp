@@ -15,11 +15,17 @@ export default (app: any, channel: any) => {
         }
     }); 
 
-    app.post("/login", async (req: Request, res: Response, next: NextFunction) => {
+    app.post("/portfolio/transaction", async (req: Request, res: Response, next: NextFunction) => {
       try {
       } catch (error) {
         next(error);
       }
   });
- 
+  app.post("/portfolio/assets", async (req: Request, res: Response, next: NextFunction) => {
+    try {
+    } catch (error) {
+      next(error);
+    }
+});
+
   }
