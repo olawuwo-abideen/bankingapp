@@ -85,7 +85,7 @@ to start using the app.
 
 ## Payment Service
 
-- `GET /payments/` - View user payment
+- `GET /payments` - View user payment
 - `GET /payment/:id/cancel` - View user cancel payment
 - `GET /payment/:id` - View user payment by id
 
