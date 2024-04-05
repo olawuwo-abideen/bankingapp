@@ -15,4 +15,12 @@ export default (app: any, channel: any) => {
         }
     }); 
 
+    app.post("/notification/sendsms", async (req: Request, res: Response, next: NextFunction) => {
+        try {
+        } catch (error) {
+          next(error);
+        }
+    }); 
+
+
   }
