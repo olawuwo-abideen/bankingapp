@@ -16,6 +16,18 @@ export default (app: any, channel: any) => {
     }); 
 
 
+    app.get("/payment/:id/cancel", async (req: Request, res: Response, next: NextFunction) => {
+        try {
+        } catch (error) {
+          next(error);
+        }
+    }); 
+
+    app.get("payment/:id", async (req: Request, res: Response, next: NextFunction) => {
+        try {
+        } catch (error) {
+          next(error);
+        }
     }); 
 
 
