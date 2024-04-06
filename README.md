@@ -78,7 +78,7 @@ to start using the app.
 
 ## Transaction Service
 
-- `GET /transaction` - View user transaction
+- `GET /transactions` - View user transaction
 - `GET /transaction/:id` - View user transaction by id
 - `GET /transaction/:id/cancel` - View user cancel transaction
 
