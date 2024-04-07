@@ -44,4 +44,18 @@ export default (app: any, channel: any) => {
         }
     }); 
 
+
+    app.put("/updateprofile", async (req: Request, res: Response, next: NextFunction) => {
+        try {
+        } catch (error) {
+          next(error);
+        }
+    }); 
+
+    app.delete("/deleteprofile", async (req: Request, res: Response, next: NextFunction) => {
+        try {
+        } catch (error) {
+          next(error);
+        }
+    }); 
 }
