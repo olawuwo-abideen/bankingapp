@@ -36,4 +36,12 @@ export default (app: any, channel: any) => {
         }
     }); 
 
+
+    app.put("/profile", async (req: Request, res: Response, next: NextFunction) => {
+        try {
+        } catch (error) {
+          next(error);
+        }
+    }); 
+
 }
