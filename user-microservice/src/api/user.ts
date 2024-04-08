@@ -8,7 +8,21 @@ export default (app: any, channel: any) => {
     
     const service = new TransactionService ();
     
-    app.get("/register", async (req: Request, res: Response, next: NextFunction) => {
+    app.post("/register", async (req: Request, res: Response, next: NextFunction) => {
+        try {
+        } catch (error) {
+          next(error);
+        }
+    }); 
+
+    app.post("/login", async (req: Request, res: Response, next: NextFunction) => {
+        try {
+        } catch (error) {
+          next(error);
+        }
+    }); 
+
+    app.post("/logout", async (req: Request, res: Response, next: NextFunction) => {
         try {
         } catch (error) {
           next(error);
