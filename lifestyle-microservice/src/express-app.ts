@@ -1,6 +1,6 @@
 import express, { Express } from "express";
 import cors from "cors";
-import { account } from "./api";
+import { lifestyle } from "./api";
 import { CreateChannel } from "./utils";
 
 export default async (app: Express) => {
@@ -9,5 +9,5 @@ export default async (app: Express) => {
   app.use(express.static(__dirname + "/public"));
   const channel = await CreateChannel();
 
-  account(app, channel);
+  lifestyle(app, channel);
 };

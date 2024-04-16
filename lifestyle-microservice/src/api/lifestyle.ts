@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { AccountService } from '../services/account-service';
+import { AccountService } from '../services/lifestyle-service';
 import { UserAuth } from './middlewares/auth';
 import { SubscribeMessage } from '../utils';
 

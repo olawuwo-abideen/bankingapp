@@ -1,5 +1,5 @@
-import { account } from './account';
+import { lifestyle } from './lifestyle';
 
 export const moduleExports = {
-    account: account
+    lifestyle: lifestyle
 };
