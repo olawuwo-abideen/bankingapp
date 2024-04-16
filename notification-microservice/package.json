@@ -9,7 +9,6 @@
   "author": "Olawuwo Abideen",
   "license": "ISC",
   "description": "A Backend to Banking App",
-
   "dependencies": {
     "amqplib": "^0.10.3",
     "cors": "^2.8.5",
