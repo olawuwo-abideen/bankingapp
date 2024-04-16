@@ -70,11 +70,14 @@ to start using the app.
 
 ## Account Service
 
-- `GET /accounts/` - View user accountS
+- `GET /accounts/` - View user accounts
+- `GET /accounts/bill` - View user accounts bills
 - `GET /account/:id` - View account by id
 - `GET /account/:id/transaction` - View account transaction by id
 - `GET /account/:id/balance` - View user account balance by id
 - `GET /account/transfer` - Get user transfer
+- `GET /account/statement` - Get user account statement
+- `GET /account/officer` - Get user account account officer details
 
 ## Transaction Service
 
@@ -104,13 +107,22 @@ to start using the app.
 - `GET /support/settings` - View settings
 - `GET /support/branches` - View branches
 - `GET /support/contact` - View contact
+- `GET /support/about` - View Bank Details
 
 
 ## Investment Service
 
+- `POST /loan` - View user loan history
 - `POST /portfolio` - View user portfolio
 - `POST /portfolio/transaction` - View user investment
 - `GET /portfolio/assets` - View user assets
+
+## Lifestyle Service
+
+- `GET /lifestyle/bookflight` - View flight booking
+- `GET /lifestyle/movieticket` - View movie ticket booking
+- `GET /lifestyle/eventtickets` - View event ticket booking
+- `GET /lifestyle/resturant` - View resturant booking
 
 ## 🤝 Contributing
 
