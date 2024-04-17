@@ -77,6 +77,7 @@ to start using the app.
 - `GET /account/:id/balance` - View user account balance by id
 - `GET /account/transfer` - Get user transfer
 - `GET /account/statement` - Get user account statement
+- `GET /account/beneficiary` - Get account beneficiary
 - `GET /account/officer` - Get user account account officer details
 
 ## Transaction Service
