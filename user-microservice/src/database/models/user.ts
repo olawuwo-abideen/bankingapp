@@ -2,9 +2,12 @@ import { Model, Sequelize, DataTypes } from 'sequelize';
 
 export default class User extends Model {
   public id?: number;
-  public name!: string;
+  public firstName!: string;
+  public lastName!: string;
   public email?: String;
+  public phoneNumber?: String;
   public password?: String;
+  public salt?: String;
 }
 
 export const UserMap = (sequelize: Sequelize) => {
@@ -14,11 +17,22 @@ export const UserMap = (sequelize: Sequelize) => {
       autoIncrement: true,
       primaryKey: true
     },
-    name: {
+    firstName: {
+      type: DataTypes.STRING(255)
+    },
+    lastName: {
       type: DataTypes.STRING(255)
     },
     email: {
       type: DataTypes.DATE,
+      allowNull: true
+    },
+    phoneNumber: {
+      type: DataTypes.NUMBER,
+      allowNull: true
+    },
+    salt: {
+      type: DataTypes.STRING,
       allowNull: true
     },
     password: {
