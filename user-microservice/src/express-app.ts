@@ -1,6 +1,6 @@
 import express, { Express } from "express";
 import cors from "cors";
-import { account } from "./api";
+import { user } from "./api";
 import { CreateChannel } from "./utils";
 
 export default async (app: Express) => {
