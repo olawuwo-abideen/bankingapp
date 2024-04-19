@@ -2,7 +2,7 @@ import { Model, Sequelize, DataTypes } from 'sequelize';
 
 export default class Account extends Model {
   public id?: number;
-  public accountnumber!: string;
+  public accountnumber!: number;
   public balance?: String;
 }
 

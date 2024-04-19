@@ -3,10 +3,10 @@ import { Model, Sequelize, DataTypes } from 'sequelize';
 export default class Beneficiary extends Model {
   public id?: number;
   public beneficiaryName!: string;
-  public beneficiaryAccountNumber!: string;
+  public beneficiaryAccountNumber!: number;
 }
 
-export const UserMap = (sequelize: Sequelize) => {
+export const BeneficiaryMap = (sequelize: Sequelize) => {
   Beneficiary.init({
     id: {
       type: DataTypes.INTEGER,
@@ -14,8 +14,7 @@ export const UserMap = (sequelize: Sequelize) => {
       primaryKey: true
     },
     beneficiaryName: {
-      type: DataTypes.INTEGER,
-      unique: true
+      type: DataTypes.CHAR,
     },
     beneficiaryAccountNumber: {
       type: DataTypes.INTEGER
