@@ -18,28 +18,28 @@ export const UserMap = (sequelize: Sequelize) => {
       primaryKey: true
     },
     firstName: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.CHAR(255),
       allowNull: false
     },
     lastName: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.CHAR(255),
       allowNull: false
     },
     email: {
-      type: DataTypes.STRING,
+      type: DataTypes.CHAR,
       unique: true,
       allowNull: false
     },
     phoneNumber: {
-      type: DataTypes.NUMBER,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     salt: {
-      type: DataTypes.STRING,
+      type: DataTypes.CHAR,
       allowNull: false
     },
     password: {
-      type: DataTypes.STRING(100),
+      type: DataTypes.CHAR(100),
       allowNull: false
     }
   }, {

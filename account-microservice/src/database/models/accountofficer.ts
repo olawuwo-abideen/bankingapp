@@ -6,7 +6,7 @@ export default class AccountOfficer extends Model {
   public contact!: string;
 }
 
-export const UserMap = (sequelize: Sequelize) => {
+export const AccountOfficerMap = (sequelize: Sequelize) => {
   AccountOfficer.init({
     id: {
       type: DataTypes.INTEGER,
@@ -14,7 +14,7 @@ export const UserMap = (sequelize: Sequelize) => {
       primaryKey: true
     },
     officername: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.CHAR,
       unique: true
     },
     contact: {
