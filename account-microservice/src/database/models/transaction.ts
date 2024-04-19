@@ -1,47 +1,49 @@
 import { Model, Sequelize, DataTypes } from 'sequelize';
 
-export default class Account extends Model {
+export default class Transaction extends Model {
   public id?: number;
-  public userid!: string;
-  public email?: String;
-  public phoneNumber?: String;
-  public password?: String;
-  public salt?: String;
+  public amount!: string;
+  public transactionType?: String;
+  public date?: String;
+  public sender?: String;
+  public receiver?: String;
+  public reference?: String;
+  public status?: String;
 }
 
-export const UserMap = (sequelize: Sequelize) => {
-    Account.init({
+export const TransactionMap = (sequelize: Sequelize) => {
+  Transaction.init({
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
       primaryKey: true
     },
-    userid: {
-      type: DataTypes.STRING(255)
+    amount: {
+      type: DataTypes.INTEGER
     },
-    lastName: {
-      type: DataTypes.STRING(255)
+    transactionType: {
+      type: DataTypes.CHAR(255)
     },
-    email: {
+    date: {
       type: DataTypes.DATE,
-      allowNull: true
     },
-    phoneNumber: {
+    sender: {
       type: DataTypes.NUMBER,
-      allowNull: true
     },
-    salt: {
+    receiver: {
       type: DataTypes.STRING,
-      allowNull: true
     },
-    password: {
+    reference: {
       type: DataTypes.STRING(100),
+    },
+    status: {
+      type: DataTypes.STRING,
       allowNull: true
     }
   }, {
     sequelize,
-    tableName: 'users',
+    tableName: 'transaction',
     timestamps: false
   });
-  Account.sync();
+  Transaction.sync();
 }
