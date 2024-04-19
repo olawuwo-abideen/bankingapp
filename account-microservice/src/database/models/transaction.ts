@@ -1,9 +1,8 @@
 import { Model, Sequelize, DataTypes } from 'sequelize';
 
-export default class User extends Model {
+export default class Account extends Model {
   public id?: number;
-  public firstName!: string;
-  public lastName!: string;
+  public userid!: string;
   public email?: String;
   public phoneNumber?: String;
   public password?: String;
@@ -11,41 +10,38 @@ export default class User extends Model {
 }
 
 export const UserMap = (sequelize: Sequelize) => {
-  User.init({
+    Account.init({
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
       primaryKey: true
     },
-    firstName: {
-      type: DataTypes.STRING(255),
-      allowNull: false
+    userid: {
+      type: DataTypes.STRING(255)
     },
     lastName: {
-      type: DataTypes.STRING(255),
-      allowNull: false
+      type: DataTypes.STRING(255)
     },
     email: {
-      type: DataTypes.STRING,
-      unique: true,
-      allowNull: false
+      type: DataTypes.DATE,
+      allowNull: true
     },
     phoneNumber: {
       type: DataTypes.NUMBER,
-      allowNull: false
+      allowNull: true
     },
     salt: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     password: {
       type: DataTypes.STRING(100),
-      allowNull: false
+      allowNull: true
     }
   }, {
     sequelize,
     tableName: 'users',
     timestamps: false
   });
-  User.sync();
+  Account.sync();
 }
