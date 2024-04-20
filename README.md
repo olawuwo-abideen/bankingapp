@@ -90,6 +90,7 @@ to start using the app.
 
 ## Payment Service
 
+- `POST /payments/sendmoney` - User send money 
 - `GET /payments` - View user payment
 - `GET /payment/:id/cancel` - View user cancel payment
 - `GET /payment/:id` - View user payment by id
