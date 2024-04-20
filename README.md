@@ -11,6 +11,7 @@
 - Sentry
 - amqplib
 - axios
+- cors
 - jest
 
 ## Installation
@@ -49,7 +50,7 @@ and go to the url
 
 ```sh
 
-http://localhost:3000
+http://localhost:
 
 ```
 
@@ -70,11 +71,11 @@ to start using the app.
 
 ## Account Service
 
-- `GET /accounts/` - View user accounts
-- `GET /accounts/bill` - View user accounts bills
+- `GET /accounts/` - View users accounts
+- `GET /accounts/bill` - View user account bills
 - `GET /account/:id` - View account by id
 - `GET /account/:id/transaction` - View account transaction by id
-- `GET /account/:id/balance` - View user account balance by id
+- `GET /account/balance` - View user account balance by 
 - `GET /account/transfer` - Get user transfer
 - `GET /account/statement` - Get user account statement
 - `GET /account/beneficiary` - Get account beneficiary
