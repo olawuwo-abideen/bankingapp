@@ -8,13 +8,20 @@ export default (app: any, channel: any) => {
     
     const service = new PaymentService();
     
-    app.get("/payments", async (req: Request, res: Response, next: NextFunction) => {
+    app.post("/payment/sendmoney", async (req: Request, res: Response, next: NextFunction) => {
         try {
         } catch (error) {
           next(error);
         }
     }); 
 
+
+    app.get("/payments", async (req: Request, res: Response, next: NextFunction) => {
+        try {
+        } catch (error) {
+          next(error);
+        }
+    }); 
 
     app.get("/payment/:id/cancel", async (req: Request, res: Response, next: NextFunction) => {
         try {
@@ -23,12 +30,19 @@ export default (app: any, channel: any) => {
         }
     }); 
 
-    app.get("payment/:id", async (req: Request, res: Response, next: NextFunction) => {
-        try {
-        } catch (error) {
-          next(error);
-        }
-    }); 
+    app.get("/payment/:id", async (req: Request, res: Response, next: NextFunction) => {
+      try {
+      } catch (error) {
+        next(error);
+      }
+  }); 
+
+  app.get("airtime", async (req: Request, res: Response, next: NextFunction) => {
+      try {
+      } catch (error) {
+        next(error);
+      }
+  }); 
 
 
   }

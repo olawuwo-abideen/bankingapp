@@ -8,7 +8,7 @@ export default (app: any, channel: any) => {
     
     const service = new SupportService ();
     
-    app.get("/tickets", async (req: Request, res: Response, next: NextFunction) => {
+    app.post("/support/ticket", async (req: Request, res: Response, next: NextFunction) => {
         try {
         } catch (error) {
           next(error);
@@ -16,29 +16,21 @@ export default (app: any, channel: any) => {
     }); 
 
 
-    app.get("/branches", async (req: Request, res: Response, next: NextFunction) => {
+    app.get("/support/ticket", async (req: Request, res: Response, next: NextFunction) => {
         try {
         } catch (error) {
           next(error);
         }
     }); 
 
-    app.get("chat", async (req: Request, res: Response, next: NextFunction) => {
+    app.post("/support/chat", async (req: Request, res: Response, next: NextFunction) => {
         try {
         } catch (error) {
           next(error);
         }
     }); 
 
-    app.get("settings", async (req: Request, res: Response, next: NextFunction) => {
-        try {
-        } catch (error) {
-          next(error);
-        }
-    }); 
-
-
-    app.get("contact", async (req: Request, res: Response, next: NextFunction) => {
+    app.get("/support/chat", async (req: Request, res: Response, next: NextFunction) => {
         try {
         } catch (error) {
           next(error);
@@ -46,5 +38,56 @@ export default (app: any, channel: any) => {
     }); 
 
 
+    app.get("/support/settings", async (req: Request, res: Response, next: NextFunction) => {
+        try {
+        } catch (error) {
+          next(error);
+        }
+    }); 
+
+    app.post("/support/branches", async (req: Request, res: Response, next: NextFunction) => {
+      try {
+      } catch (error) {
+        next(error);
+      }
+  }); 
+
+
+  app.post("/support/branches", async (req: Request, res: Response, next: NextFunction) => {
+      try {
+      } catch (error) {
+        next(error);
+      }
+  }); 
+
+  app.post("/support/contact", async (req: Request, res: Response, next: NextFunction) => {
+      try {
+      } catch (error) {
+        next(error);
+      }
+  }); 
+
+  app.get("/support/contact", async (req: Request, res: Response, next: NextFunction) => {
+      try {
+      } catch (error) {
+        next(error);
+      }
+  }); 
+
+
+  app.post("/support/about", async (req: Request, res: Response, next: NextFunction) => {
+      try {
+      } catch (error) {
+        next(error);
+      }
+  }); 
+
+
+  app.get("/support/about", async (req: Request, res: Response, next: NextFunction) => {
+    try {
+    } catch (error) {
+      next(error);
+    }
+}); 
 
   }

@@ -104,7 +104,9 @@ to start using the app.
 
 ## Support Service
 
+- `POST /support/ticket` - User create tickets
 - `GET /support/ticket` - View user register tickets
+- `POST /support/chat` - User start chat
 - `GET /support/chat` - View user chat
 - `GET /support/settings` - View settings
 - `POST /support/branches` - Create branches
