@@ -96,7 +96,6 @@ to start using the app.
 - `GET /payment/:id` - View user payment by id
 
 
-
 ## Notification Service
 
 - `POST /notification/sendEmail` - Send email

@@ -1,8 +1,5 @@
-import SmsModel from './sms';
-import EmailModel from './email';
+import TransactionModel from './transaction';
 
 export const models = {
-    SmsModel,
-    EmailModel
-
+    TransactionModel
 };
