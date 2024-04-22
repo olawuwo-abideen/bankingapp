@@ -63,7 +63,7 @@ to start using the app.
 - `POST /register` - User create an account
 - `POST /login` - User login
 - `POST /logout` - User logout
-- `UPDATE /reset-password` - User reset password
+- `PATCH /reset-password` - User reset password
 - `GET /profile` - User view profile
 - `UPDATE /updateprofile` - User update profile 
 - `DELETE /deleteprofile` - User Delete profile
@@ -76,10 +76,12 @@ to start using the app.
 - `GET /account/:id` - View account by id
 - `GET /account/:id/transaction` - View account transaction by id
 - `GET /account/balance` - View user account balance by 
-- `GET /account/transfer` - Get user transfer
+- `POST /account/transfer` - Get user transfer
 - `GET /account/statement` - Get user account statement
+- `POST /account/beneficiary` - Create account beneficiary
 - `GET /account/beneficiary` - Get account beneficiary
-- `GET /account/officer` - Get user account account officer details
+- `POST /account/officer` - Create user account officer details
+- `GET /account/officer` - Get user account officer details
 
 ## Transaction Service
 
@@ -98,8 +100,8 @@ to start using the app.
 
 ## Notification Service
 
-- `POST /notification/sendEmail` - Send email
-- `POST/notification/sendSMS` - Send sms
+- `POST /notification/sendEmail` - Send email notification
+- `POST/notification/sendSMS` - Send sms notification
 
 
 ## Support Service
