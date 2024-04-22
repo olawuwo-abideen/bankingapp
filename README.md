@@ -68,7 +68,6 @@ to start using the app.
 - `UPDATE /updateprofile` - User update profile 
 - `DELETE /deleteprofile` - User Delete profile
 
-
 ## Account Service
 
 - `GET /accounts/` - View users accounts
@@ -89,7 +88,6 @@ to start using the app.
 - `GET /transaction/:id` - View user transaction by id
 - `GET /transaction/:id/cancel` - View user cancel transaction
 
-
 ## Payment Service
 
 - `POST /payments/sendmoney` - User send money 
@@ -97,22 +95,24 @@ to start using the app.
 - `GET /payment/:id/cancel` - View user cancel payment
 - `GET /payment/:id` - View user payment by id
 
-
 ## Notification Service
 
 - `POST /notification/sendEmail` - Send email notification
 - `POST/notification/sendSMS` - Send sms notification
-
+- `GET /notification/sendEmail` - View email notification
+- `GET/notification/sendSMS` - View sms notification
 
 ## Support Service
 
 - `GET /support/ticket` - View user register tickets
 - `GET /support/chat` - View user chat
 - `GET /support/settings` - View settings
+- `POST /support/branches` - Create branches
 - `GET /support/branches` - View branches
+- `POST /support/contact` - Create contact
 - `GET /support/contact` - View contact
+- `POST /support/about` - Create Bank Details
 - `GET /support/about` - View Bank Details
-
 
 ## Investment Service
 
@@ -122,11 +122,16 @@ to start using the app.
 - `GET /portfolio/assets` - View user assets
 
 ## Lifestyle Service
-
+- `POST /lifestyle/bookflight` - Book flight Ticket
+- `POST /lifestyle/movieticket` - Book movie ticket 
+- `POST /lifestyle/eventtickets` - Book event ticket 
+- `POST /lifestyle/resturant` - Book resturant 
+- `POST /lifestyle/food` - Order for Food
 - `GET /lifestyle/bookflight` - View flight booking
 - `GET /lifestyle/movieticket` - View movie ticket booking
 - `GET /lifestyle/eventtickets` - View event ticket booking
 - `GET /lifestyle/resturant` - View resturant booking
+- `GET /lifestyle/food` - View food orders 
 
 ## 🤝 Contributing
 
@@ -141,5 +146,3 @@ Feel free to check the [issues page](https://github.com/olawuwo-abideen/bankinga
 - GitHub: [@Olawuwo Abideen](https://github.com/olawuwo-abideen)
 - Twitter: [@Olawuwo Abideen](https://twitter.com/olawuwo_abideen)
 - LinkedIn: [@Olawuwo Abideen](https://www.linkedin.com/in/olawuwo-abideen/)
-
-
