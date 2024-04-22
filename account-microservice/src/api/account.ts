@@ -8,20 +8,20 @@ export default (app: any, channel: any) => {
     
     const service = new AccountService();
     
-    app.post("/register", async (req: Request, res: Response, next: NextFunction) => {
+    app.get("/account", async (req: Request, res: Response, next: NextFunction) => {
         try {
         } catch (error) {
           next(error);
         }
     });
 
-    app.post("/login", async (req: Request, res: Response, next: NextFunction) => {
+    app.get("/accounts/bill", async (req: Request, res: Response, next: NextFunction) => {
       try {
       } catch (error) {
         next(error);
       }
   });
-  app.post("/logout", async (req: Request, res: Response, next: NextFunction) => {
+  app.get("/account/:id", async (req: Request, res: Response, next: NextFunction) => {
     try {
     } catch (error) {
       next(error);
@@ -29,28 +29,57 @@ export default (app: any, channel: any) => {
 });
 
 
-app.put("/resetpasword", async (req: Request, res: Response, next: NextFunction) => {
+app.get("/account/:id/transaction", async (req: Request, res: Response, next: NextFunction) => {
   try {
   } catch (error) {
     next(error);
   }
 });
 
-app.get("/profile", async (req: Request, res: Response, next: NextFunction) => {
+app.get("/account/balance", async (req: Request, res: Response, next: NextFunction) => {
   try {
   } catch (error) {
     next(error);
   }
 });
 
-app.get("/updateprofile", async (req: Request, res: Response, next: NextFunction) => {
+app.post("/account/transfer", async (req: Request, res: Response, next: NextFunction) => {
   try {
   } catch (error) {
     next(error);
   }
 });
 
-app.get("/deleteprofile", async (req: Request, res: Response, next: NextFunction) => {
+app.get("/account/statement", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.get("/account/beneficiary", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.post("/account/beneficiary", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.post("/account/officer", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+  } catch (error) {
+    next(error);
+  }
+});
+
+
+app.get("/account/officer", async (req: Request, res: Response, next: NextFunction) => {
   try {
   } catch (error) {
     next(error);
