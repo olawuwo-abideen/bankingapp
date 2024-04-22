@@ -94,12 +94,12 @@ to start using the app.
 - `GET /payments` - View user payment
 - `GET /payment/:id/cancel` - View user cancel payment
 - `GET /payment/:id` - View user payment by id
-
+- `POST /payments/airtime` - User send money
 ## Notification Service
 
 - `POST /notification/sendEmail` - Send email notification
-- `POST/notification/sendSMS` - Send sms notification
 - `GET /notification/sendEmail` - View email notification
+- `POST/notification/sendSMS` - Send sms notification
 - `GET/notification/sendSMS` - View sms notification
 
 ## Support Service
@@ -116,21 +116,22 @@ to start using the app.
 
 ## Investment Service
 
-- `POST /loan` - View user loan history
-- `POST /portfolio` - View user portfolio
-- `POST /portfolio/transaction` - View user investment
+- `POST /loan` - User  request for loan 
+- `GET /loan` - View user loan history
+- `GET /portfolio` - View user portfolio
+- `GET /portfolio/transaction` - View user investment
 - `GET /portfolio/assets` - View user assets
 
 ## Lifestyle Service
 - `POST /lifestyle/bookflight` - Book flight Ticket
-- `POST /lifestyle/movieticket` - Book movie ticket 
-- `POST /lifestyle/eventtickets` - Book event ticket 
-- `POST /lifestyle/resturant` - Book resturant 
-- `POST /lifestyle/food` - Order for Food
 - `GET /lifestyle/bookflight` - View flight booking
+- `POST /lifestyle/movieticket` - Book movie ticket 
 - `GET /lifestyle/movieticket` - View movie ticket booking
 - `GET /lifestyle/eventtickets` - View event ticket booking
+- `POST /lifestyle/eventtickets` - Book event ticket 
+- `POST /lifestyle/resturant` - Book resturant 
 - `GET /lifestyle/resturant` - View resturant booking
+- `POST /lifestyle/food` - Order for Food
 - `GET /lifestyle/food` - View food orders 
 
 ## 🤝 Contributing

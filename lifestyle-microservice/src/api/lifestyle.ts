@@ -1,60 +1,80 @@
 import { Request, Response, NextFunction } from 'express';
-import { AccountService } from '../services/lifestyle-service';
+import { LifestyleService } from '../services/lifestyle-service';
 import { UserAuth } from './middlewares/auth';
 import { SubscribeMessage } from '../utils';
 
 
 export default (app: any, channel: any) => {
     
-    const service = new AccountService();
+    const service = new LifestyleService();
     
-    app.post("/register", async (req: Request, res: Response, next: NextFunction) => {
+    app.post("/lifestyle/bookflight", async (req: Request, res: Response, next: NextFunction) => {
         try {
         } catch (error) {
           next(error);
         }
     });
 
-    app.post("/login", async (req: Request, res: Response, next: NextFunction) => {
+    app.get("/lifestyle/bookflight", async (req: Request, res: Response, next: NextFunction) => {
       try {
       } catch (error) {
         next(error);
       }
   });
-  app.post("/logout", async (req: Request, res: Response, next: NextFunction) => {
+  app.post("/lifestyle/movieticket", async (req: Request, res: Response, next: NextFunction) => {
     try {
     } catch (error) {
       next(error);
     }
 });
 
-
-app.put("/resetpasword", async (req: Request, res: Response, next: NextFunction) => {
+app.get("/lifestyle/movieticket", async (req: Request, res: Response, next: NextFunction) => {
   try {
   } catch (error) {
     next(error);
   }
 });
 
-app.get("/profile", async (req: Request, res: Response, next: NextFunction) => {
+app.post("/lifestyle/eventtickets", async (req: Request, res: Response, next: NextFunction) => {
   try {
   } catch (error) {
     next(error);
   }
 });
 
-app.get("/updateprofile", async (req: Request, res: Response, next: NextFunction) => {
+app.get("/lifestyle/eventtickets", async (req: Request, res: Response, next: NextFunction) => {
   try {
   } catch (error) {
     next(error);
   }
 });
 
-app.get("/deleteprofile", async (req: Request, res: Response, next: NextFunction) => {
+app.post("/lifestyle/resturant", async (req: Request, res: Response, next: NextFunction) => {
   try {
   } catch (error) {
     next(error);
   }
 });
 
+
+app.get("/lifestyle/resturant", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.post("/lifestyle/food", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.get("/lifestyle/food", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+  } catch (error) {
+    next(error);
+  }
+});
   }
