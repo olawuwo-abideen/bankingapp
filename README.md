@@ -94,7 +94,9 @@ to start using the app.
 - `GET /payments` - View user payment
 - `GET /payment/:id/cancel` - View user cancel payment
 - `GET /payment/:id` - View user payment by id
-- `POST /payments/airtime` - User send money
+- `POST /payments/airtime` - User buy airtime
+- `POST /payments/datapurchase` - User buy data
+
 ## Notification Service
 
 - `POST /notification/sendEmail` - Send email notification
