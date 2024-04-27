@@ -96,6 +96,8 @@ to start using the app.
 - `GET /payment/:id` - View user payment by id
 - `POST /payments/airtime` - User buy airtime
 - `POST /payments/datapurchase` - User buy data
+- `POST /payments/cabletv` - User buy for cabletv
+- `POST /payments/utility` - User pay for utility bill
 
 ## Notification Service
 
