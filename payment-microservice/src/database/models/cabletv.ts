@@ -7,7 +7,7 @@ export default class CableTV extends Model {
   public customerid!: String;
 }
 
-export const DataPurchaseMap = (sequelize: Sequelize) => {
+export const CableTVMap = (sequelize: Sequelize) => {
     CableTV.init({
     id: {
       type: DataTypes.INTEGER,
@@ -15,13 +15,13 @@ export const DataPurchaseMap = (sequelize: Sequelize) => {
       primaryKey: true
     },
     billers: {
-      type: DataTypes.INTEGER
+      type: DataTypes.CHAR
     },
     product: {
-      type: DataTypes.INTEGER
+      type: DataTypes.CHAR
     },
     customerid: {
-        type: DataTypes.CHAR
+        type: DataTypes.INTEGER
       }
   }, {
     sequelize,
